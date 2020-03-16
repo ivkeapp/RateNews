@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "132383195151",
+    "firebase_url": "https://ratenews-19875.firebaseio.com",
+    "project_id": "ratenews-19875",
+    "storage_bucket": "ratenews-19875.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132383195151:android:db8b268557b96ad4f4e37a",
+        "android_client_info": {
+          "package_name": "com.example.ratenews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132383195151-rcqrm5j70jh2n4a9dk8iq42cb3iqea0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ratenews",
+            "certificate_hash": "f61bf1dfaf682e9f0e0c2a4bf0711099f33b755a"
+          }
+        },
+        {
+          "client_id": "132383195151-6onocurdle8jqfd63420fpr8vn8j8j83.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ratenews",
+            "certificate_hash": "4bf53bd547db574bd176d6fae78e2f9e639d7b57"
+          }
+        },
+        {
+          "client_id": "132383195151-s46veu354h3d0r5gnpblbkn59uq9oej3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVtjB9ZlFWUD8g8dQx9I4nRxPtek7a8tQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132383195151-s46veu354h3d0r5gnpblbkn59uq9oej3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

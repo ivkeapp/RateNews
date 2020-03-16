@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/darkGrayBackground">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="@color/grayLight"
+            android:text="Pridruži nam se">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/grayLight"
+            android:text="Ova aplikacija služi za razvrstavanje bljuvotina koje škrabaju prodani novinari od stvarnih i istinitih događaja za koje su zaduženi hrabri i istrajni ljudi. A za razvrstavanje ste zaduženi vi, korisnici. Osetite se slobodnim da nam se pridružite, potpuno je besplatno."
+            android:layout_marginTop="25dp">
+        </TextView>
+        <Button
+            android:layout_marginTop="25dp"
+            android:background="@drawable/login_btn_style_red"
+            android:textColor="@color/grayLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saznaj više"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtEmail_InpLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/email"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Unesi e-mail"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtPassw_InpLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/password"
+                android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Izaberi lozinku"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtPasswR_InpLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/confirmed_password"
+                android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Ponovi lozinku"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:background="@drawable/login_btn_style_red"
+            android:textColor="@color/grayLight"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Registruj se"
+            android:layout_marginTop="25dp"
+            android:drawableRight="@drawable/ic_send_black_24dp"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>
